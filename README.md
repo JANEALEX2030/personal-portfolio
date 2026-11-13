@@ -47,7 +47,7 @@ This project is a responsive, multi-page personal portfolio for Jane Alex, a thi
 | HTML5 | Structures the four pages, content, navigation, images, project cards, tables, and contact form. |
 | CSS3 | Provides shared visual styling, responsive layouts, the site background, hover treatments, and animation effects. |
 | Vanilla JavaScript | Powers responsive navigation, project filters and detail dialogs, the contact form's email draft, and interactive animation demonstrations. |
-| GitHub Pages | Intended static hosting platform; deployment is not confirmed yet. |
+| GitHub Pages | Intended static hosting platform. |
 
 
 
