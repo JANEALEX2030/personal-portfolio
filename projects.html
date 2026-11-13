@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore Jane Alex's software projects in student services, operations, communication, and digital wellness.">
+    <title>Projects | Jane Alex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/script.js"></script>
+  </head>
+  <body>
+    <canvas class="ambient-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="brand" href="index.html">Jane <span>Alex</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a data-page="home" href="index.html">Home</a><a data-page="about" href="about.html">About</a><a data-page="projects" href="projects.html">Projects</a><a data-page="animations" href="animations.html">Animations</a>
+      </nav>
+      <a class="button button-small header-contact" href="mailto:jane2030alex@gmail.com">Contact</a>
+    </header>
+
+    <main class="page-width inner-page">
+      <section class="page-title reveal"><p class="eyebrow">Selected work</p><h1>Featured <span class="gradient-text">projects</span></h1><p class="lead">A selection of software systems exploring student services, business workflows, communication, and digital wellness.</p></section>
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All projects</button>
+        <button class="filter-button" type="button" data-filter="student" aria-pressed="false">Student services</button>
+        <button class="filter-button" type="button" data-filter="operations" aria-pressed="false">Operations</button>
+        <button class="filter-button" type="button" data-filter="communication" aria-pressed="false">Communication</button>
+        <button class="filter-button" type="button" data-filter="wellness" aria-pressed="false">Digital wellness</button>
+      </div>
+      <section class="project-grid">
+        <article class="project-card reveal" data-category="student">
+          <div class="project-image-link">
+            <img src="images/Voting SYstem.jpeg" alt="Student management and voting platform project artwork">
+          </div>
+          <div class="project-body"><p class="eyebrow">Student services · October 2026</p><h2>DMI Student Management &amp; Voting System</h2><p>A university cohort platform for voter verification, confidential digital ballots, and clear election results.</p><h3>Technologies</h3><div class="tag-row"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>React</span><span>Tailwind CSS</span><span>REST API</span></div><div class="project-actions"><span class="text-link">Project repository link needed</span><button class="details-button" type="button" data-project-details="student-voting">Project details</button></div></div>
+        </article>
+        <article class="project-card reveal" data-category="operations">
+          <a class="project-image-link" href="https://github.com/JANEALEX2030/inventory-control-system" target="_blank" rel="noopener noreferrer" aria-label="View the Inventory Control System repository on GitHub">
+            <img src="images/Inventory Control 1.jpeg" alt="Inventory management dashboard artwork">
+            <span class="image-link-label">View project repository ↗</span>
+          </a>
+          <div class="project-body"><p class="eyebrow">Operations · August 2026</p><h2>Inventory Control System</h2><p>A desktop app for managing inventory items, orders, restocking, and low-stock levels.</p><h3>Technologies</h3><div class="tag-row"><span>Python</span><span>SQLite</span><span>Tkinter</span></div><div class="project-actions"><a class="text-link" href="https://github.com/JANEALEX2030/inventory-control-system" target="_blank" rel="noopener noreferrer">Explore repository ↗</a><button class="details-button" type="button" data-project-details="inventory">Project details</button></div></div>
+        </article>
+        <article class="project-card reveal" data-category="communication">
+          <a class="project-image-link" href="https://github.com/JANEALEX2030/EMAIL-SENDER-APPLICATION" target="_blank" rel="noopener noreferrer" aria-label="View the Email Sender Application repository on GitHub">
+            <img src="images/Email Sender Application.jpg" alt="Multi-channel messaging application artwork">
+            <span class="image-link-label">View project repository ↗</span>
+          </a>
+          <div class="project-body"><p class="eyebrow">Communication · July 2026</p><h2>Email Client Application</h2><p>A Python desktop email client for sending messages and viewing recent inbox messages.</p><h3>Technologies</h3><div class="tag-row"><span>Python</span><span>Tkinter</span><span>SMTP</span><span>IMAP</span></div><div class="project-actions"><a class="text-link" href="https://github.com/JANEALEX2030/EMAIL-SENDER-APPLICATION" target="_blank" rel="noopener noreferrer">Explore repository ↗</a><button class="details-button" type="button" data-project-details="sender">Project details</button></div></div>
+        </article>
+        <article class="project-card project-card-text reveal" data-category="wellness">
+          <a class="project-image-link" href="https://github.com/JANEALEX2030/mental-health-companion-system" target="_blank" rel="noopener noreferrer" aria-label="View the Mental Health Companion System repository on GitHub">
+            <img src="images/Mobile App on Mental Health.jpeg" alt="Suliwekha mental wellness mobile app welcome screen">
+            <span class="image-link-label">View project repository ↗</span>
+          </a>
+          <div class="project-body"><p class="eyebrow">Digital wellness · May 2026</p><h2>Mental Health Companion System</h2><p>A Flutter mobile app for mental wellness, connected to a Python and Flask development backend.</p><h3>Technologies</h3><div class="tag-row"><span>Flutter</span><span>Dart</span><span>Python</span><span>Flask</span></div><div class="project-actions"><a class="text-link" href="https://github.com/JANEALEX2030/mental-health-companion-system" target="_blank" rel="noopener noreferrer">Explore repository ↗</a><button class="details-button" type="button" data-project-details="wellness">Project details</button></div></div>
+        </article>
+      </section>
+      <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+        <div class="dialog-content">
+          <div class="dialog-header"><div><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2></div><button class="dialog-close" type="button" aria-label="Close project details">×</button></div>
+          <section class="dialog-section"><h3>Project overview</h3><p id="dialog-description"></p></section>
+          <section class="dialog-section"><h3>Problem addressed</h3><p id="dialog-problem"></p></section>
+          <section class="dialog-section"><h3>Key features</h3><ul class="dialog-features" id="dialog-features"></ul></section>
+          <section class="dialog-section"><h3>Technologies</h3><div class="tag-row" id="dialog-technologies"></div></section>
+          <div class="dialog-footer"><p id="dialog-role"></p><a class="button button-small" href="https://github.com/JANEALEX2030" target="_blank" rel="noopener noreferrer">Visit GitHub profile ↗</a></div>
+        </div>
+      </dialog>
+      <section class="contact-panel reveal"><div><p class="eyebrow">Code &amp; collaboration</p><h2>Find me on GitHub</h2><p>Visit my profile to explore repositories and current work.</p></div><a class="button" href="https://github.com/JANEALEX2030" target="_blank" rel="noopener noreferrer">github.com/JANEALEX2030 ↗</a></section>
+    </main>
+
+    <footer class="site-footer page-width"><a class="brand" href="index.html">Jane <span>Alex</span></a><p>© 2026 Jane Alex · Computer Science Portfolio</p><div class="footer-links"><a href="mailto:jane2030alex@gmail.com">Email</a><a href="https://github.com/JANEALEX2030" target="_blank" rel="noopener noreferrer">GitHub</a></div></footer>
+  </body>
+</html>

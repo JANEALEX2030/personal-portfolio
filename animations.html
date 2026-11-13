@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Interactive web animation demonstrations by Jane Alex.">
+    <title>Animations | Jane Alex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/script.js"></script>
+  </head>
+  <body>
+    <canvas class="ambient-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="brand" href="index.html">Jane <span>Alex</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a data-page="home" href="index.html">Home</a><a data-page="about" href="about.html">About</a><a data-page="projects" href="projects.html">Projects</a><a data-page="animations" href="animations.html">Animations</a>
+      </nav>
+      <a class="button button-small header-contact" href="mailto:jane2030alex@gmail.com">Contact</a>
+    </header>
+
+    <main class="page-width inner-page">
+      <section class="page-title reveal"><p class="eyebrow">Motion &amp; interaction</p><h1>Interactive <span class="gradient-text">experiments</span></h1><p class="lead">Explore small motion details that add feedback and personality to a website.</p></section>
+      <section class="section" id="animations">
+        <div class="section-heading reveal"><p class="eyebrow">Motion &amp; interaction</p><h2>Interactive experiments</h2><p class="section-intro">Small motion details that add feedback and personality to a website.</p></div>
+        <div class="demo-grid">
+          <article class="demo-card reveal"><div class="demo-heading"><span class="demo-number">01</span><div><h3>Typewriter</h3><p>Rotating role descriptions</p></div></div><div class="demo-stage typing-stage"><span id="demo-typed">Software Engineer</span><span class="typing-caret" aria-hidden="true"></span></div></article>
+          <article class="demo-card reveal"><div class="demo-heading"><span class="demo-number">02</span><div><h3>Interactive tilt</h3><p>Move your pointer over the card</p></div></div><div class="demo-stage"><div class="tilt-card" data-tilt><span class="eyebrow">A little perspective</span><strong>Ideas become<br>real experiences.</strong><span class="tilt-spark">✳</span></div></div></article>
+          <article class="demo-card reveal"><div class="demo-heading"><span class="demo-number">03</span><div><h3>Progress indicators</h3><p>Animated skill bars</p></div></div><div class="demo-stage skill-demo"><div class="meter-row"><div><span>Frontend</span><b>90%</b></div><div class="meter"><i data-level="90"></i></div></div><div class="meter-row"><div><span>Problem solving</span><b>85%</b></div><div class="meter"><i data-level="85"></i></div></div><div class="meter-row"><div><span>Database design</span><b>80%</b></div><div class="meter"><i data-level="80"></i></div></div><button class="text-link replay-button" type="button">Replay progress ↻</button></div></article>
+          <article class="demo-card reveal"><div class="demo-heading"><span class="demo-number">04</span><div><h3>Scroll reveal</h3><p>Elements enter as you explore</p></div></div><div class="demo-stage reveal-sample"><span class="reveal-chip">Thoughtful motion</span><span class="reveal-chip">Clear feedback</span><span class="reveal-chip">More delight</span></div></article>
+        </div>
+      </section>
+      <section class="code-explorer reveal" aria-labelledby="code-explorer-title">
+        <div class="code-explorer-heading"><div><p class="eyebrow">Under the hood</p><h2 id="code-explorer-title">Animation code explorer</h2></div><button class="email-copy code-copy" type="button" id="copy-code">Copy snippet</button></div>
+        <div class="code-tabs" role="tablist" aria-label="Code language">
+          <button class="code-tab" type="button" role="tab" data-code-tab="html" aria-selected="true">HTML</button>
+          <button class="code-tab" type="button" role="tab" data-code-tab="css" aria-selected="false">CSS</button>
+          <button class="code-tab" type="button" role="tab" data-code-tab="js" aria-selected="false">JavaScript</button>
+        </div>
+        <pre class="code-block"><code id="demo-code">&lt;span class="typed-text" aria-live="polite"&gt;&lt;/span&gt;
+&lt;span class="typing-caret" aria-hidden="true"&gt;&lt;/span&gt;</code></pre>
+        <p class="form-status" id="code-status" role="status" aria-live="polite"></p>
+      </section>
+      <section class="ambient-note reveal"><span class="ambient-symbol">✳</span><div><p class="eyebrow">Running in the background</p><h2>Ambient canvas</h2><p>Subtle moving points and connecting lines create a quiet sense of depth behind every page.</p></div></section>
+      <section class="contact-panel reveal"><div><p class="eyebrow">Code &amp; collaboration</p><h2>Find me on GitHub</h2><p>Visit my profile to explore repositories and current work.</p></div><a class="button" href="https://github.com/JANEALEX2030" target="_blank" rel="noopener noreferrer">github.com/JANEALEX2030 ↗</a></section>
+    </main>
+
+    <footer class="site-footer page-width"><a class="brand" href="index.html">Jane <span>Alex</span></a><p>© 2026 Jane Alex · Computer Science Portfolio</p><div class="footer-links"><a href="mailto:jane2030alex@gmail.com">Email</a><a href="https://github.com/JANEALEX2030" target="_blank" rel="noopener noreferrer">GitHub</a></div></footer>
+  </body>
+</html>
